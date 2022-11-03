@@ -1,6 +1,6 @@
 {
-  "name": "zebra-printer",
-  "version": "0.0.1",
+  "name": "zebra-printer-label",
+  "version": "0.0.2",
   "description": "connect zebra printer via local IP",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://githab.com/sashko687/zebra-printer.git"
+    "url": "https://githab.com/sashko687/zebra-printer.git"
   },
   "bugs": {
     "url": "https://githab.com/sashko687/zebra-printer/issues"

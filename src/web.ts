@@ -7,4 +7,22 @@ export class ZebraPrinterWeb extends WebPlugin implements ZebraPrinterPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async print(options: {ip: string, port: number, zpl: string }): Promise<{ value:string }> {
+
+    var request = new Request("http://"+options.ip+"/pstprnt",{
+      method: 'POST',
+      mode: 'no-cors',
+      cache: 'no-cache',
+      body: options.zpl
+    });
+    return await fetch(request)
+    // .then(handleErrors)
+    .then(()=>{
+      return {value: "print succesfully executed" }
+    })
+    .catch((error)=>{
+        throw Error(error);
+    });
+  }
 }
