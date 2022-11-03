@@ -6,6 +6,10 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+
 @CapacitorPlugin(name = "ZebraPrinter")
 public class ZebraPrinterPlugin extends Plugin {
 
