@@ -5,7 +5,7 @@ connect zebra printer via local IP
 ## Install
 
 ```bash
-npm install zebra-printer
+npm i zebra-printer-label
 npx cap sync
 ```
 
