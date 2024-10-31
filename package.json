@@ -1,6 +1,6 @@
 {
   "name": "zebra-printer-label",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "connect zebra printer via local IP",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
