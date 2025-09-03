@@ -85,7 +85,7 @@ public class ZebraPrinterPlugin extends Plugin {
 			// send a response back
 			JSObject ret = new JSObject();
 			ret.put("value", "Succesfully sent to printer");
-			call.success(ret);
+			call.resolve(ret);
 		}
 
 
